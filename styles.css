@@ -1,0 +1,81 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #333333;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+h1 {
+    margin-top: 2rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.score, .timer {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+#game-board {
+    display: inline-block;
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.word {
+    font-size: 2.5rem;
+    color: #ffffff;
+    position: relative;
+}
+
+.word:before {
+    content: attr(data-placeholder);
+    position: absolute;
+    color: rgba(255, 255, 255, 0.3);
+    pointer-events: none;
+}
+
+.romaji {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-top: 1rem;
+}
+
+#user-input {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    outline: none;
+}
+
+#user-input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#start-button {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+#start-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+

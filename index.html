@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushi Typing Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>タイピングゲーム</h1>
+    <div id="game-board">
+        <span id="current-word" class="word"></span>
+        <p id="romaji-word" class="romaji"></p>
+    </div>
+    <input type="text" id="user-input" placeholder="Type here...">
+    <button id="start-button">Start</button>
+    <p class="score">Score: <span id="score">0</span></p>
+    <p class="timer">Time left: <span id="timer">60</span></p>
+    <script src="script.js"></script>
+</body>
+</html>
